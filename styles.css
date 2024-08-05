@@ -105,6 +105,18 @@ h2{
     font-size: 3em;
 }
 
+h3{
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+h4{
+    font-size: 1em;
+    font-weight: 600;
+    text-align: center;
+    
+}
 a {
     text-decoration: none;
 }
@@ -151,8 +163,6 @@ img {
 
 #plan div {
     display: block;
-    
-    
 }
 
 #plan section {
@@ -172,6 +182,7 @@ section img {
     margin-left: 75px;
     width:50%;
 }
+
 
 #about section {
     display: grid;
