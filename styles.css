@@ -1,0 +1,173 @@
+/* Saylor Brock-Allison */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+} 
+
+/*CSS Styles Start Here */
+@import url('https://fonts.googleapis.com/css2?family=Molle&family=Montserrat&display=swap');
+:root {
+    --yellow: #F6D64A;
+    --teal: #55BCD5;
+    --purple: #9B26B0;
+    --blue: #499BD2;
+    --dark-gray: #222222;
+    --light-gray: #EAEAEA;
+    --white: #FFFFFF;
+    --black: #000000;
+}
+h1 , h2, h3 {
+    font-family: 'Molle';
+}
+h4, p, q, small, nav, button, form {
+    font-family: 'Montserrat';
+}
+#skip{
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+}
+ 
+#skip:focus{
+    position:static;
+    width:auto;
+    height:auto;
+}
+
+.sr-only {
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+    }
+
+header {
+    background-image: linear-gradient(var(--teal), var(--white));
+    padding: 20px;
+
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2{
+    font-size: 2em;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+header a#logo img {
+    max-height:50px;
+}
+
+
+header label {
+    background-color: var(--yellow);
+}
+
+img {
+    width: 100%;
+}
+#intro h2, #intro p{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+}
+#plan {
+    background-color: var(--yellow);
+
+}
+
+#testimonials {
+    text-align: center;
+}
+
+#about {
+    background-color: var(--blue);
+}
+
+#plan div {
+    display: block;
+    
+    
+}
+
+#plan section {
+    align-items: center;
+    background-color: var(--teal); 
+    width: 300px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 5px;
+    border-color: var(--white);
+}
+section img {
+    margin-left: 75px;
+    width:50%;
+}
+
+#about section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+
+}
