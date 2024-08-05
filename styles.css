@@ -59,13 +59,12 @@ table {
     --white: #FFFFFF;
     --black: #000000;
 }
-h1 , h2, h3 {
-    font-family: 'Molle';
-    font-style: italic;
-}
-h4, p, q, small, nav, button, form {
-    font-family: 'Montserrat';
-    font-weight: 400;
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--dark-gray);
+    background-color: var(--light-gray);
+    margin: 0;
+    padding: 0;
 }
 #skip{
     position:absolute;
@@ -94,35 +93,34 @@ h4, p, q, small, nav, button, form {
 header {
     background-image: linear-gradient(var(--teal), var(--white));
     padding: 20px;
+    text-align: center;
 
 }
 
-h1 {
+header h1 {
+    font-family: 'Molle', cursive;
     font-size: 3.5em;
 }
 
-h2{
-    font-size: 3em;
+nav{
+    display: flex;
+    justify-content: center;
+    background-color: var(--blue);
+    padding: 10px 0;
 }
-
-h3{
-    font-size: 2em;
-    text-align: center;
-    margin-bottom: 15px;
-}
-
-h4{
-    font-size: 1em;
-    font-weight: 600;
-    text-align: center;
-    
-}
-a {
+nav a {
+    color: var(--white);
     text-decoration: none;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+nav a:hover {
+    background-color: var(--yellow);
+    color: var(--black);
 }
 
 img {
-    max-width: 100%;
+    width: 100%;
 }
 
 header a#logo img {
@@ -134,23 +132,32 @@ header label {
     background-color: var(--yellow);
 }
 
-img {
-    width: 100%;
+#intro{
+    padding: 50px 10%;
+    background-color: var(--white);
 }
-#intro h2, #intro p{
-    margin-left: 10%;
-    margin-right: 10%;
-    line-height: 225%;
+
+#intro h2 {
+    font-family:'Molle', cursive;
+    font-size: 2em;
+    margin-bottom: 20px;
 }
 #intro p{
-    font-weight: 100;
+    font-size: 1.2em;
+    line-height: 1.6;
 }
-#intro h1{
-    font-size: 30px;
-}
+
 #plan {
     background-color: var(--yellow);
+    padding: 50px 10%;
+    text-align: center;
 
+}
+
+#plan h2 {
+    font-family: 'Molle', cursive;
+    font-size: 2.5em;
+    margin-bottom: 30px;
 }
 
 #testimonials {
@@ -162,7 +169,9 @@ img {
 }
 
 #plan div {
-    display: block;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap
 }
 
 #plan section {
