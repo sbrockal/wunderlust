@@ -61,9 +61,11 @@ table {
 }
 h1 , h2, h3 {
     font-family: 'Molle';
+    font-style: italic;
 }
 h4, p, q, small, nav, button, form {
     font-family: 'Montserrat';
+    font-weight: 400;
 }
 #skip{
     position:absolute;
@@ -96,11 +98,11 @@ header {
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 3.5em;
 }
 
 h2{
-    font-size: 2em;
+    font-size: 3em;
 }
 
 a {
@@ -124,8 +126,12 @@ img {
     width: 100%;
 }
 #intro h2, #intro p{
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    line-height: 225%;
+}
+#intro h1{
+    font-size: 26px;
 }
 #plan {
     background-color: var(--yellow);
