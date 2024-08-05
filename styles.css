@@ -130,6 +130,9 @@ img {
     margin-right: 10%;
     line-height: 225%;
 }
+#intro p{
+    font-weight: 100;
+}
 #intro h1{
     font-size: 26px;
 }
